@@ -4,43 +4,38 @@
   <meta charset="UTF-8">
   <title>Welcome to My Portfolio</title>
   <style>
-.portfolio {
-  padding: 2rem;
-  background-color: #fff;
-}
-.<div class="portfolio-grid">
-  <div class="portfolio-item">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_000000001c8061f7b8e300177c9239aa_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3Ddbb4268b-fa36-4ac9-8123-4232ba19372c.png" alt="Project 1">
-    <p>3D Product Animation</p>
-  </div>
-  <div class="portfolio-item">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000008c624696fd63b03fa2bd64_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D105e2392-700b-414e-8ab8-cd2e8b7bb6e7.png" alt="Project 2">
-    <p>Landing Page Design</p>
-  </div>
-  <div class="portfolio-item">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000bb5c624695854cb3794e27b3_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D64618cfe-ec94-4665-b707-69a469153367.png" alt="Project 3">
-    <p>Brand Identity Design</p>
-  </div>
-  <div class="portfolio-item">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000c9a461f7b4adfde066ebf40e_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3D1e4b7e66-8731-4059-9b86-257e94f494f3.png" alt="Project 4">
-    <p>Mockup Showcase</p>
-  </div>
-</div>
- {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 1rem;
-}
-.portfolio-grid img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.portfolio-grid img:hover {
-  transform: scale(1.03);
-}
+    .portfolio {
+      padding: 2rem;
+      background-color: #fff;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 1rem;
+    }
+
+    .portfolio-item {
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item img:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -49,16 +44,19 @@
       padding: 0;
       text-align: center;
     }
+
     header {
       background: #111;
       color: white;
       padding: 2rem;
     }
+
     form {
       max-width: 400px;
       margin: 0 auto;
       text-align: left;
     }
+
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -67,6 +65,7 @@
       border-radius: 6px;
       box-sizing: border-box;
     }
+
     button {
       background: #111;
       color: white;
@@ -75,32 +74,40 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
     button:hover {
       background: #333;
     }
+
     .logo {
       margin: 20px 0;
     }
+
     .logo img {
       width: 200px;
       height: auto;
       border-radius: 10px;
     }
+
     section {
       padding: 2rem;
     }
+
     footer {
       background: #222;
       color: #aaa;
       padding: 2rem 1rem;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       padding: 0.3rem 0;
     }
+
     .social-buttons a {
       display: inline-block;
       margin: 0 10px;
@@ -112,9 +119,11 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
+
     .social-buttons a:hover {
       background-color: #365899;
     }
+
     .cta {
       background-color: #ffe600;
       padding: 2rem;
@@ -122,10 +131,12 @@
       font-weight: bold;
       color: #222;
     }
+
     .testimonials {
       background: #fff;
       padding: 2rem;
     }
+
     .testimonial {
       background: #eee;
       padding: 1rem;
@@ -170,18 +181,30 @@
     <div class="testimonial">"Amazing quality and fast delivery! My product looks stunning in 3D." – Jane D.</div>
     <div class="testimonial">"My sales increased after working with them on branding and landing page design." – Mark T.</div>
   </section>
-<section class="portfolio">
-  <h2>My Portfolio</h2>
-  <p>Some of the amazing projects I've worked on:</p>
-  <div class="portfolio-grid">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_000000001c8061f7b8e300177c9239aa_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3Ddbb4268b-fa36-4ac9-8123-4232ba19372c.png" alt="Project 1">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000008c624696fd63b03fa2bd64_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D105e2392-700b-414e-8ab8-cd2e8b7bb6e7.png" alt="Project 2">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000bb5c624695854cb3794e27b3_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D64618cfe-ec94-4665-b707-69a469153367.png" alt="Project 3">
-    <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000c9a461f7b4adfde066ebf40e_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3D1e4b7e66-8731-4059-9b86-257e94f494f3.png" alt="Project 4">
-  </div>
-</section>
 
-  <!-- ✅ Contact Form Section -->
+  <section class="portfolio">
+    <h2>My Portfolio</h2>
+    <p>Some of the amazing projects I've worked on:</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_000000001c8061f7b8e300177c9239aa_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3Ddbb4268b-fa36-4ac9-8123-4232ba19372c.png" alt="Project 1">
+        <p>3D Product Animation</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000008c624696fd63b03fa2bd64_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D105e2392-700b-414e-8ab8-cd2e8b7bb6e7.png" alt="Project 2">
+        <p>Landing Page Design</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000bb5c624695854cb3794e27b3_conversation_id%3D67fe6190-f904-800c-a15b-458b23466258%26message_id%3D64618cfe-ec94-4665-b707-69a469153367.png" alt="Project 3">
+        <p>Brand Identity Design</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/boydotun/my-project/c01d7188d23b4c1df673595b06c612aeede1b3da/file_00000000c9a461f7b4adfde066ebf40e_conversation_id%3D67fda269-9e94-8008-a11d-fb153d7f08bb%26message_id%3D1e4b7e66-8731-4059-9b86-257e94f494f3.png" alt="Project 4">
+        <p>Mockup Showcase</p>
+      </div>
+    </div>
+  </section>
+
   <section>
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/xnndadgp" method="POST">
